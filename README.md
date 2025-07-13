@@ -68,6 +68,13 @@ Este projeto é uma API RESTful desenvolvida em Node.js (Express) para o desafio
 - O limite de requisições e tempo podem ser alterados em [ratelimniter.js](ratelimniter.js).
 - Você pode criar um arquivo `.env` no diretório raiz do projeto e definir os valores de `PORT` e `JWT_SECRET`, caso não crie eles terão os valores padrão: `3000` e `"segredojwt"`.
 
+**Exemplo de arquivo .env**:
+   ```bash
+   PORT = 3000
+   JWT_SECRET = "segredojwt"
+   ```
+  
+
 ## 🔗 Rotas
 
 Veja o arquivo [routes/apiRoutes.js](routes/apiRoutes.js) para todos os endpoints disponíveis.  
@@ -87,11 +94,11 @@ Toda a parte que está entre `//ADICIONAIS  //` não faz parte do enunciado do d
 
 1. **Clone o projeto:**
    ```bash
-   git clone link
+   git clone https://github.com/PEDRO-Lz/Irriga_Global.git
    ```
 2. **Navegue até o diretório raiz:**
    ```bash
-   cd dir/
+   cd Irriga_Global/
    ```
 3. **Instale as dependências:**
    ```bash
@@ -102,13 +109,8 @@ Toda a parte que está entre `//ADICIONAIS  //` não faz parte do enunciado do d
    node server.js
    ```  
 
-*O servidor rodará na porta 3000 (ou definida em `PORT` no [server.js](server.js).*
+*O servidor rodará na porta 3000 por padrão.*
 
-**Exemplo de arquivo .ev**:
-   ```bash
-   PORT = 3000
-   JWT_SECRET = "segredojwt"
-   ```
 
  ## ✅ Testes
    - Utilizando `Postman`, importe o arquivo de coleção [API_Tests.postman_collection.json](API_Tests.postman_collection.json) para realizar uma bateria de testes. É interessante analisar os logs gerados.
