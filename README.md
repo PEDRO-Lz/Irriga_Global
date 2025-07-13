@@ -66,7 +66,7 @@ Este projeto é uma API RESTful desenvolvida em Node.js (Express) para o desafio
 - Um Admin padrão é criado com o script [/models/AdminCriar.js](/models/AdminCriar.js) ao inicializar o servidor.
 - Os logs são exportados em .json e nas rotas de listagem é utilizado [logParser](logParser).
 - O limite de requisições e tempo podem ser alterados em [ratelimniter.js](ratelimniter.js).
-- Você pode criar um arquivo `.env` no diretório raiz do projeto e definir os valores de `PORT` e `JWT_SECRET`, caso não crie eles terão os valores padrão: `3000` e `"segredojwt"`.
+- Você pode criar um arquivo `.env` no diretório raiz do projeto e definir os valores de `PORT` e `JWT_SECRET`, caso não crie, eles terão os valores padrão: `3000` e `"segredojwt"`.
 
 **Exemplo de arquivo .env**:
    ```bash
@@ -74,7 +74,6 @@ Este projeto é uma API RESTful desenvolvida em Node.js (Express) para o desafio
    JWT_SECRET = "segredojwt"
    ```
   
-
 ## 🔗 Rotas
 
 Veja o arquivo [routes/apiRoutes.js](routes/apiRoutes.js) para todos os endpoints disponíveis.  
@@ -111,7 +110,7 @@ Toda a parte que está entre `//ADICIONAIS  //` não faz parte do enunciado do d
 
 *O servidor rodará na porta 3000 por padrão.*
 
-
  ## ✅ Testes
-   - Utilizando `Postman`, importe o arquivo de coleção [API_Tests.postman_collection.json](API_Tests.postman_collection.json) para realizar uma bateria de testes. É interessante analisar os logs gerados.
+   - Utilizando `Postman`, importe o arquivo de coleção [API_Tests.postman_collection.json](API_Tests.postman_collection.json) para realizar uma bateria de testes.
+   - É interessante utilizar a ferramenta **RUN** na coleção, que está organizada em uma sequência de requisições específicas para testes, permitindo validar o comportamento da API e analisar os logs gerados.
    - Os testes cobrem casos de sucesso e erros esperados.
