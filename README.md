@@ -31,10 +31,10 @@ Este projeto é uma API RESTful desenvolvida em Node.js (Express) para o desafio
 
 - **📊 Logs (winston)**
   - Todas as ações relevantes são registradas em `logs/info.log`
-  - Rotas para consultar logs por usuário ou geral
+  - Rotas para consultar logs por usuário ou geral para Admin
 
 - **🛡️ Rate Limiter**
-  - Limite de requisições nas rotas de autenticação
+  - Limite de requisições nas rotas de autenticação e cadastro
 
 ## 📁 Estrutura do Projeto
 ```
